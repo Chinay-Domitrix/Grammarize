@@ -16,7 +16,7 @@
 		android:ems="10"
 		android:inputType="textPersonName"
 		android:gravity="top"
-		android:background="null"
+		android:background="#00000000"
 		android:hint="Input Your Text Here" />
 
 	<ImageView
