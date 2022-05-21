@@ -1,10 +1,8 @@
+import static org.gradle.api.JavaVersion.VERSION_17
+
 plugins {
 	id 'com.android.application'
 }
-
-def apikeyPropertiesFile = rootProject.file("apikey.properties")
-def apikeyProperties = new Properties()
-apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
 
 android {
 	compileSdk 32
@@ -17,7 +15,6 @@ android {
 		versionName "1.0"
 
 		testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-		buildConfigField("String", "GPT3", apikeyProperties['gpt3'])
 	}
 
 	buildTypes {
@@ -27,8 +24,8 @@ android {
 		}
 	}
 	compileOptions {
-		sourceCompatibility JavaVersion.VERSION_1_8
-		targetCompatibility JavaVersion.VERSION_1_8
+		sourceCompatibility VERSION_17
+		targetCompatibility VERSION_17
 	}
 	namespace 'com.example.grammarize'
 }
