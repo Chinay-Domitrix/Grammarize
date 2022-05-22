@@ -4,7 +4,6 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:background="@drawable/background_gradient"
-	android:orientation="vertical"
 	android:padding="32dp"
 	tools:context=".MainActivity">
 
@@ -24,7 +23,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:layout_weight="1.75"
-		android:src="@drawable/ic_round_arrow_downward_24" />
+		android:src="@drawable/ic_round_arrow_forward_24" />
 
 	<TextView
 		android:id="@+id/output"
@@ -32,5 +31,4 @@
 		android:layout_height="match_parent"
 		android:layout_weight="1"
 		android:scrollbars="vertical" />
-
 </LinearLayout>
